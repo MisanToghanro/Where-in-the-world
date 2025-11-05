@@ -1,0 +1,55 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Exo:ital,wght@0,100..900;1,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+@import "tailwindcss";
+
+
+body{
+  font-family: "Exo", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 200;
+  font-style: normal;
+  background-color: var(--color-bg);
+  color: var(--color-text);
+  transition: background-color 0.3s, color 0.3s;
+}
+
+
+/* ---------- Root (Light Mode) ---------- */
+:root {
+  /* Light mode colors */
+  --color-bg: hsl(0, 0%, 99%);              /* Grey 50 */
+  --color-element: hsl(0, 100%, 100%);       /* White */
+  --color-text: hsl(200, 15%, 8%);           /* Grey 950 */
+  --color-input: hsl(0, 0%, 50%);            /* Grey 400 */
+}
+
+/* ---------- Dark Mode ---------- */
+.dark {
+  --color-bg: hsl(207, 26%, 17%);            /* Blue 950 */
+  --color-element: hsl(209, 23%, 22%);       /* Blue 900 */
+  --color-text: hsl(0, 100%, 100%);          /* White */
+}
+.dark header{
+  background-color:var(--color-element) ;
+}
+.dark footer{
+  background-color:var(--color-element) ;
+}
+
+
+
+
+
+/* Example reusable classes */
+.card {
+  background-color: var(--color-element);
+
+}
+
+input {
+  background-color: var(--color-element);
+  color: var(--color-text);
+  border: 1px solid var(--color-input);
+  padding: 0.5rem;
+  border-radius: 5px;
+}
