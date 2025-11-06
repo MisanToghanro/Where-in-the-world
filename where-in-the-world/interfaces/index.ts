@@ -28,9 +28,9 @@ export interface CountryDetailProps {
   region: string;
   subregion?: string;
   capital: string;
-  population: number // if you're formatting it with commas, you can keep it string
+  population: number 
   tld?: string;
-  currencies?: string; // already formatted (e.g. "Euro (€)")
-  languages?: string; // already joined (e.g. "English, French")
+  currencies?: string; 
+  languages?: string;
   borders?: string[];
 }
